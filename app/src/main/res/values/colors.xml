@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="appColor">#7924d4</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="background_color">#F9FAFB</color>
+    <color name="icon_color">#FF000000</color>
+    <color name="text_primary">#111827</color>
+    <color name="card_background">#FFFFFF</color>
+    <color name="text_secondary">#6B7280</color>
+    <color name="button_add">#10B981</color>
+    <color name="text_button">#FFFFFF</color>
+    <color name="button_remove">#EF4444</color>
+
+
+</resources>

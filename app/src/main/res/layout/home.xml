@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <!-- Toolbar with Back Arrow -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:gravity="center_vertical"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:text="Home"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <!-- Search Icon -->
+        <ImageButton
+            android:id="@+id/shoppingList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:background="@null"
+            android:contentDescription="Shopping List"
+            android:src="@drawable/baseline_shopping_cart_24" />
+
+        <!-- Search Icon -->
+        <ImageButton
+            android:id="@+id/refreshIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:contentDescription="Refresh"
+            android:src="@drawable/refresh_icon" />
+
+
+    </LinearLayout>
+
+    <!-- GridView to display the product list -->
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:numColumns="2"
+        android:horizontalSpacing="8dp"
+        android:verticalSpacing="8dp"
+        android:padding="8dp"
+        android:background="#FFFFFF" />
+
+
+    <!-- Button to navigate to AddItem screen -->
+    <Button
+        android:id="@+id/addItemButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Add Item"
+        android:background="@drawable/button"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+<!--    &lt;!&ndash; TextView to display and update the total amount &ndash;&gt;-->
+<!--    <TextView-->
+<!--        android:id="@+id/totalAmountTextView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Total Amount: ₹0"-->
+<!--        android:textSize="18sp"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        android:gravity="center"-->
+<!--        android:padding="16dp"-->
+<!--        android:background="#4CAF50"-->
+<!--        android:clickable="true"-->
+<!--        android:focusable="true" />-->
+</LinearLayout>

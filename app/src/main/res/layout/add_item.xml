@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_additem_image">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <!-- Toolbar with Back Arrow -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <!-- Back Arrow -->
+            <ImageView
+                android:id="@+id/backArrowAdd"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/arrow_back"
+                android:contentDescription="Back Arrow"
+                android:padding="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Add Item"
+                android:paddingLeft="50dp"
+                android:paddingTop="2dp"
+            android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!--ImageView to preview the selected image-->
+        <ImageView
+            android:id="@+id/previewImageView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp" />
+
+        <EditText
+            android:id="@+id/t1"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#000000"
+            android:hint="Product ID" />
+
+        <EditText
+            android:id="@+id/t2"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textColor="#000000"
+            android:hint="Product Name" />
+
+        <EditText
+            android:id="@+id/t3"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textColor="#000000"
+            android:hint="Product Description" />
+
+        <EditText
+            android:id="@+id/t4"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#000000"
+            android:hint="Image URL" />
+
+        <Button
+            android:id="@+id/b1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:padding="10dp"
+            android:background="@color/appColor"
+            android:textColor="@color/text_button"
+            android:layout_marginTop="30dp" />
+
+        <EditText
+            android:id="@+id/t5"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textColor="#000000"
+            android:hint="Product Price" />
+
+
+        <Button
+            android:id="@+id/b2"
+            android:layout_width="350dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="30dp"
+            android:padding="10dp"
+            android:textColor="@color/text_button"
+            android:background="@color/appColor"
+            android:text="Add"
+            android:textSize="20sp" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</ScrollView>
